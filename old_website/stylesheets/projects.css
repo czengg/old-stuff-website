@@ -1,0 +1,65 @@
+.content {
+	margin-left: 2%;
+}
+
+.content h1 {
+	font-family: Oswald, sans-serif;
+	font-weight: 400;
+	display: inline-block;
+}
+
+.content h2 {
+	font-family: Oswald, sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.content p, li, dl {
+	font-family: Oswald, sans-serif;
+	font-weight: 300;
+	color: black;
+}
+
+.content a {
+	text-decoration: none;
+	color: black;
+}
+
+.content a:hover {
+	color: #1A5492;
+	font-weight: bold;
+}
+
+#name a {
+	text-decoration: none;
+	color: white;
+}
+
+#name a:hover {
+	color: black;
+}
+
+.nav-bar a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+.sidebar:hover {
+	color: #1A5492;
+	cursor: pointer;
+}
+
+#project-name {
+	margin-left: 5px;
+	color: #1A5492;
+	display: inline-block;
+}
+
+#project-content {
+	width: 50%;
+}
+
+#project-content img {
+	width: 100%;
+}
+

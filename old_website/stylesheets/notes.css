@@ -1,0 +1,98 @@
+
+
+.content {
+	margin-left: 2%;
+}
+
+.content h1 {
+	font-family: Oswald, sans-serif;
+	font-weight: 400;
+	display: inline-block;
+}
+
+.content h2 {
+	font-family: Oswald, sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.content p, li, dl {
+	font-family: Oswald, sans-serif;
+	font-weight: 300;
+	color: black;
+}
+
+.content a {
+	text-decoration: none;
+	color: black;
+}
+
+.content a:hover {
+	color: #1A5492;
+	font-weight: bold;
+}
+
+#name a {
+	text-decoration: none;
+	color: white;
+}
+
+#name a:hover {
+	color: black;
+}
+
+.nav-bar a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+.sidebar:hover {
+	color: #1A5492;
+	cursor: pointer;
+}
+
+#notes-name {
+	margin-left: 5px;
+	color: #1A5492;
+	display: inline-block;
+}
+
+#notes-content {
+	width: 50%;
+}
+
+#notes-content img {
+	width: 80%;
+}
+
+a:active {
+	margin-bottom: -3px;
+}
+
+p em {
+	color: #B40431;
+	font-weight: 400;
+}
+
+.content b {
+	font-weight: 400;
+}
+
+#imp {
+	font-weight: 700;
+	font-size: 30px;
+	color: #1A5492;
+}
+
+#end {
+	font-weight: 400;
+	font-size: 25px;
+	font-style: italic;
+	color: #1A5492;
+	font-family: 'La Belle Aurore', cursive;
+}
+
+#notes-content .slimjim {
+	width: 32%;
+	display: inline-block;
+}

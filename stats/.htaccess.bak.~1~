@@ -1,0 +1,6 @@
+Options +Indexes
+AuthType Basic
+AuthName "cindyzeng.com Statistics"
+AuthUserFile /var/chroot/home/content/43/10477243/html/stats/.statspwd
+Require valid-user
+DirectoryIndex index.html

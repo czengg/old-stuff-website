@@ -1,0 +1,76 @@
+body {
+	background-image: url("../cream_dust_@2X.png");
+}
+
+#nav-commands a {
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+}
+
+#nav-commands a:hover {
+	color: black;
+}
+
+#nav-commands h2 {
+	display: inline-block;
+}
+
+.separator {
+	display: inline-block;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.nav-bar {
+	background-color: #1A5492;
+	width: 120%;
+	margin-left: -10%;
+	margin-right: -10%;
+	margin-top: -30px;
+	-webkit-box-shadow: inset 0px -10px 10px 0px rgba(50, 50, 50, .5);
+    -moz-box-shadow: inset 0px -10px 10px 0px rgba(50, 50, 50, .5);
+    box-shadow: inset 0px -10px 10px 0px rgba(50, 50, 50, .5);
+}
+
+.nav-button {
+	color: white;
+	font-family: Oswald, sans-serif;
+	font-weight: 400;
+	display: inline-block;
+}
+
+#name {
+	font-family: Oswald, sans-serif;
+	font-weight: 700;
+	font-size: 50px;
+	color: white;
+	margin-left: 10%;
+	margin-top: 30px;
+	display: inline-block;
+}
+
+@media (min-width: 1001px) {
+	#nav-commands {
+		display: inline-block;
+		margin-top: 30px;
+		width: 65%;
+	}
+
+	#front {
+		margin-left: 10%;
+	}
+}
+
+@media (max-width: 1000px) and (min-width: 300px) { 
+	#nav-commands {
+		display: block;
+		margin-top: -30px;
+		font-size: 10px;
+		margin-left: 10%;
+	}
+
+	#front {
+		margin-left: 0px;
+	}
+}

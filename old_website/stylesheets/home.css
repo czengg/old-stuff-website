@@ -1,0 +1,32 @@
+.content h1 {
+	font-family: Oswald, sans-serif;
+	font-weight: 400;
+}
+
+.content img {
+	width: 100%;
+}
+
+.content p {
+	font-family: Oswald, sans-serif;
+	font-weight: 300;
+	color: black;
+}
+
+.content a {
+	text-decoration: none;
+	color: black;
+}
+
+.content a:hover {
+	color: #1A5492;
+        font-weight: bold;
+}
+
+.left-col {
+	width: 30%;
+}
+
+.content {
+	width: 100%;
+}

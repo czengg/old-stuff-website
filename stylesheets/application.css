@@ -1,0 +1,282 @@
+@media (min-width: 1100px) { 
+	body {
+		background-image: url("../images/background-big.png");
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	.billboard {
+		display: inline-block;
+		position: fixed;
+		right: 3%;
+		top: 15%;
+		font-family: Amatic SC;
+		color: #4BB3CB;
+	}
+
+	.projects {
+		position: fixed;
+		right: 30%;
+		top: 20%;
+		width: 50%;
+		height: auto;
+		font-family: Amatic SC;
+		background-color: #B7B4B2;
+		color: #FFFFFF;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		padding: 1%;
+
+		-webkit-transition-property: top, bottom;
+        -webkit-transition-duration: 0.5s;
+
+		transition: width 2s, height 2s, transform 2s;
+		-webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+	}
+
+	.icons {
+		bottom: 5%;
+		right: 2%;
+		position: fixed;
+	}
+
+	.go-top {
+		position: fixed;
+		top: 0px;
+		right: 16%;
+	}
+}
+
+@media (min-width:900px) and (max-width: 1100px) { 
+	body {
+		background-image: url("../images/background-medium.png");
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	.billboard {
+		display: inline-block;
+		position: fixed;
+		right: 5%;
+		top: 15%;
+		font-family: Amatic SC;
+		color: #4BB3CB;
+	}
+
+	.projects {
+		position: fixed;
+		right: 40%;
+		top: 20%;
+		width: 35%;
+		height: auto;
+		font-family: Amatic SC;
+		background-color: #B7B4B2;
+		color: #FFFFFF;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		padding: 1%;
+
+		-webkit-transition-property: top, bottom;
+        -webkit-transition-duration: 0.5s;
+
+		transition: width 2s, height 2s, transform 2s;
+		-webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+	}
+
+	.icons {
+		bottom: 5%;
+		right: 2%;
+		position: fixed;
+	}
+
+	.go-top {
+		position: fixed;
+		top: 0px;
+		right: 23%;
+	}
+}
+
+@media (min-width:600px) and (max-width: 900px) { 
+	body {
+		background-image: url("../images/background-small.png");
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	.billboard {
+		display: block;
+		font-family: Amatic SC;
+		color: #4BB3CB;
+		margin-top: 50px;
+	}
+
+	.projects {
+		position: fixed;
+		right: 5%;
+		top: 20%;
+		width: 55%;
+		height: auto;
+		font-family: Amatic SC;
+		background-color: #B7B4B2;
+		color: #FFFFFF;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		padding: 1%;
+
+		-webkit-transition-property: top, bottom;
+        -webkit-transition-duration: 0.5s;
+
+		transition: width 2s, height 2s, transform 2s;
+		-webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+	}
+
+	.icons {
+		margin-left: 2%;
+		margin-top: -30px;
+	}
+
+	.go-top {
+		position: fixed;
+		top: 0px;
+		right: 2%;
+	}
+}
+
+@media (max-width: 600px) { 
+	body {
+		background-image: url("../images/background-small.png");
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	.icons {
+		display: inline-block;
+		margin-left: 5%;
+		margin-top: -5%;
+		margin-bottom: 2%;
+	}
+
+	.billboard {
+		display: block;
+		font-family: Amatic SC;
+		color: #4BB3CB;
+		text-align: center;
+	}
+
+	.projects {
+		position: fixed;
+		right: 10%;
+		top: 50%;
+		width: 80%;
+		height: auto;
+		font-family: Amatic SC;
+		background-color: #B7B4B2;
+		color: #FFFFFF;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		padding: 1%;
+
+		-webkit-transition-property: top, bottom;
+        -webkit-transition-duration: 0.5s;
+
+		transition: width 2s, height 2s, transform 2s;
+		-webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+	}
+
+	.go-top {
+		position: fixed;
+		top: 0px;
+		right: 2%;
+	}
+}
+
+/*NAME*/
+.name {
+	font-family: Didot;
+	font-size: 30px;
+	margin-top: -30px;
+	margin-left: 2%;
+	display: inline-block;
+}
+
+.name:hover {
+	color: #D21D52;
+	cursor: pointer;
+}
+
+#last {
+	margin-top: -70px;
+	margin-left: 40px;
+}
+
+/*SOCIAL MEDIA ICONS*/
+
+.social {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	position: relative;
+}
+
+#facebook {
+	background-image: url("../images/icons-sprite-sheet.png");
+	background-size: 400%;
+	background-position: 0px -39px;
+	overflow: hidden;
+}
+
+#facebook:hover {
+	background-position: 0px -89px;
+	cursor: pointer;
+}
+
+#linkedin {
+	background-image: url("../images/icons-sprite-sheet.png");
+	background-size: 400%;
+	background-position: 150px -39px;
+	overflow: hidden;
+}
+
+#linkedin:hover {
+	background-position: 150px -89px;
+	cursor: pointer;
+}
+
+#twitter {
+	background-image: url("../images/icons-sprite-sheet.png");
+	background-size: 400%;
+	background-position: 100px -39px;
+	overflow: hidden;
+}
+
+#twitter:hover {
+	background-position: 100px -89px;
+	cursor: pointer;
+}
+
+#email {
+	background-image: url("../images/icons-sprite-sheet.png");
+	background-size: 400%;
+	background-position: 50px -39px;
+	overflow: hidden;
+}
+
+#email:hover {
+	background-position: 50px -89px;
+	cursor: pointer;
+}
+
+.go-top {
+	width: 150px;
+	height: 62.5px;
+	background-image: url("../images/top-sprite.png");
+	background-position: 0px 0px;
+	background-size: 100%;
+	display: none;
+}
+
+.go-top:hover {
+	background-position: 0px -62.5px;
+	cursor: pointer;
+}
+
