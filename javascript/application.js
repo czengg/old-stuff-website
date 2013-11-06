@@ -59,42 +59,87 @@ $(".projects").mousewheel(function(event,delta){
     }
 }); 
 
-$(".projects").on("scrollstart",function(event) {
-	var touch = event.touches[0];
-    $(".projects").data("originY",touch.pageY)
-})
+// $(".projects").on("scrollstart",function(event) {
+// 	var touch = event.touches[0];
+//     $(".projects").data("originY",touch.pageY)
+// })
 
-$(".projects").on("scrollstop",function(event) {
-	event.preventDefault();
+// $(".projects").on("scrollstop",function(event) {
+// 	event.preventDefault();
 
-	var touch = event.touches[0];
-	var delta = this.data("originY") - touch.pageY;
-	var div = $(this);
+// 	var touch = event.touches[0];
+// 	var delta = this.data("originY") - touch.pageY;
+// 	var div = $(this);
 
-    var top = parseInt(div.css("top"));
-    var height = $(document).height();
-    var divHeight = parseInt(div.css("height"));
-    var width = $(document).width();
+//     var top = parseInt(div.css("top"));
+//     var height = $(document).height();
+//     var divHeight = parseInt(div.css("height"));
+//     var width = $(document).width();
 
-    var prop;
-    if(width > 600) {
-    	prop = .2;
-    }
-    else {
-    	prop = .45;
-    }
+//     var prop;
+//     if(width > 600) {
+//     	prop = .2;
+//     }
+//     else {
+//     	prop = .45;
+//     }
 
-    if (delta > 0) {
-    	if(top < (prop*height)) {
-        	div.css("top", parseInt(div.css("top"))+delta);
-    	}
-    } else {
-    	if((top+divHeight) > height) {
-        	div.css("top", parseInt(div.css("top"))-delta);
-    	}
-    }
+//     if (delta > 0) {
+//     	if(top < (prop*height)) {
+//         	div.css("top", parseInt(div.css("top"))+delta);
+//     	}
+//     } else {
+//     	if((top+divHeight) > height) {
+//         	div.css("top", parseInt(div.css("top"))-delta);
+//     	}
+//     }
 
-})
+// })
+
+// touch event check stolen from Modernizr
+var touchSupported = (('ontouchstart' in window) ||
+                        window.DocumentTouch && document instanceof DocumentTouch);
+
+// if touch events are supported, tie our animation to the position to these events as well
+if (touchSupported) {
+
+    $(".projects").bind("touchstart", function(e) {
+        var val = e.currentTarget.scrollY;
+        $(".projects").data("originY",val);
+    })
+
+    $(".projects")
+        .bind("touchmove", function(e) {
+            var val = e.currentTarget.scrollY;
+            event.preventDefault();
+
+            var delta = this.data("originY") - val;
+            var div = $(this);
+
+            var top = parseInt(div.css("top"));
+            var height = $(document).height();
+            var divHeight = parseInt(div.css("height"));
+            var width = $(document).width();
+
+            var prop;
+            if(width > 600) {
+                prop = .2;
+            }
+            else {
+                prop = .45;
+            }
+
+            if (delta > 0) {
+                if(top < (prop*height)) {
+                    div.css("top", parseInt(div.css("top"))+10);
+                }
+            } else {
+                if((top+divHeight) > height) {
+                    div.css("top", parseInt(div.css("top"))-10);
+                }
+            }
+        });
+}
 
 // $(".projects").swipe({
 //     swipeUp:function(event, direction, distance, duration, fingerCount) {
