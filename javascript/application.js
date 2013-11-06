@@ -59,12 +59,12 @@ $(".projects").mousewheel(function(event,delta){
     }
 }); 
 
-$(".projects").on("touchstart",function(event) {
+$(".projects").on("scrollstart",function(event) {
 	var touch = event.touches[0];
     $(".projects").data("originY",touch.pageY)
 })
 
-$(".projects").on("touchmove",function(event) {
+$(".projects").on("scrollstop",function(event) {
 	event.preventDefault();
 
 	var touch = event.touches[0];
@@ -86,11 +86,11 @@ $(".projects").on("touchmove",function(event) {
 
     if (delta > 0) {
     	if(top < (prop*height)) {
-        	div.css("top", parseInt(div.css("top"))+10);
+        	div.css("top", parseInt(div.css("top"))+delta);
     	}
     } else {
     	if((top+divHeight) > height) {
-        	div.css("top", parseInt(div.css("top"))-10);
+        	div.css("top", parseInt(div.css("top"))-delta);
     	}
     }
 
