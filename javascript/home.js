@@ -36,7 +36,7 @@ function addBio() {
 	var resume = $("<h2></h2>");
 	resume.addClass("resume title");
 	resume.append("resume");
-	resume.click(function() {
+	resume.on("click tap",function() {
 	    url="http://www.cindyzeng.com/resume.pdf";
 	    window.open(url,"_blank");
 	});
@@ -121,7 +121,7 @@ function addDesign() {
 	var bny = $("<h2></h2>");
 	bny.addClass("projectTitle");
 	bny.append("bny mellon internship");
-	bny.click(function() {
+	bny.on("click tap",function() {
 		if(bnyDiv.css("display") === "none") {
 			bnyDiv.css("display","block");
 		}
@@ -149,7 +149,7 @@ function addDesign() {
 	var latest = $("<h2></h2>");
 	latest.addClass("projectTitle");
 	latest.append("thelatest internship");
-	latest.click(function() {
+	latest.on("click tap",function() {
 		if(latestDiv.css("display") === "none") {
 			latestDiv.css("display","block");
 		}
@@ -178,7 +178,7 @@ function addDesign() {
 	var posters = $("<h2></h2>");
 	posters.addClass("projectTitle");
 	posters.append("posters");
-	posters.click(function() {
+	posters.on("click tap",function() {
 		if(postersDiv.css("display") === "none") {
 			postersDiv.css("display","block");
 		}
@@ -229,7 +229,7 @@ function addCode() {
 	var github = $("<h2></h2>");
 	github.addClass("projectTitle");
 	github.append("github");
-	github.click(function() {
+	github.on("click tap",function() {
 		url = "https://www.github.com/czengg";
 		window.open(url,"_blank");
 	})
@@ -251,7 +251,7 @@ function addCode() {
 	var tutorme = $("<h2></h2>");
 	tutorme.addClass("projectTitle");
 	tutorme.append("tutor me");
-	tutorme.click(function() {
+	tutorme.on("click tap",function() {
 		if(tutormeDiv.css("display") === "none") {
 			tutormeDiv.css("display","block");
 		}
@@ -283,7 +283,7 @@ function addCode() {
 	var notetaker = $("<h2></h2>");
 	notetaker.addClass("projectTitle notetaker");
 	notetaker.append("notetaker");
-	notetaker.click(function() {
+	notetaker.on("click tap",function() {
 		if(notetakerDiv.css("display") === "none") {
 			notetakerDiv.css("display","block");
 		}
@@ -312,7 +312,7 @@ function addCode() {
 	var fig = $("<h2></h2>");
 	fig.addClass("projectTitle");
 	fig.append("fig");
-	fig.click(function() {
+	fig.on("click tap",function() {
 		if(figDiv.css("display") === "none") {
 			figDiv.css("display","block");
 		}
@@ -339,7 +339,7 @@ function addCode() {
 	var apollo = $("<h2></h2>");
 	apollo.addClass("projectTitle");
 	apollo.append("apollo");
-	apollo.click(function() {
+	apollo.on("click tap",function() {
 		if(apolloDiv.css("display") === "none") {
 			apolloDiv.css("display","block");
 		}
@@ -411,7 +411,7 @@ function addDo() {
 	var kappa = $("<h2></h2>");
 	kappa.addClass("projectTitle");
 	kappa.append("kappa kappa gamma");
-	kappa.click(function() {
+	kappa.on("click tap",function() {
 		if(kappaDiv.css("display") === "none") {
 			kappaDiv.css("display","block");
 		}
@@ -439,7 +439,7 @@ function addDo() {
 	var apex = $("<h2></h2>");
 	apex.addClass("projectTitle");
 	apex.append("apex");
-	apex.click(function() {
+	apex.on("click tap",function() {
 		if(apexDiv.css("display") === "none") {
 			apexDiv.css("display","block");
 		}
@@ -464,7 +464,7 @@ function addDo() {
 	var infant = $("<h2></h2>");
 	infant.addClass("projectTitle");
 	infant.append("infant language learning lab");
-	infant.click(function() {
+	infant.on("click tap",function() {
 		if(infantDiv.css("display") === "none") {
 			infantDiv.css("display","block");
 		}
