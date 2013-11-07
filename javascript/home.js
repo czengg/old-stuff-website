@@ -1,3 +1,6 @@
+var touchSupported = (('ontouchstart' in window) ||
+                        window.DocumentTouch && document instanceof DocumentTouch);
+
 
 // EVENT LISTENERS
 
@@ -121,7 +124,7 @@ function addDesign() {
 	var bny = $("<h2></h2>");
 	bny.addClass("projectTitle");
 	bny.append("bny mellon internship");
-	bny.on("click tap",function() {
+	bny.on("click",function() {
 		if(bnyDiv.css("display") === "none") {
 			bnyDiv.css("display","block");
 		}
@@ -129,6 +132,17 @@ function addDesign() {
 			bnyDiv.css("display","none");
 		}
 	}.bind(bnyDiv));
+	if (touchSupported) {
+		bny.on("tap",function() {
+			if(bnyDiv.css("display") === "none") {
+				bnyDiv.css("display","block");
+			}
+			else {
+				bnyDiv.css("display","none");
+			}
+		}.bind(bnyDiv));
+	}
+	
 
 	projectList.append(bny);
 	projectList.append(bnyDiv);
@@ -149,7 +163,7 @@ function addDesign() {
 	var latest = $("<h2></h2>");
 	latest.addClass("projectTitle");
 	latest.append("thelatest internship");
-	latest.on("click tap",function() {
+	latest.on("click",function() {
 		if(latestDiv.css("display") === "none") {
 			latestDiv.css("display","block");
 		}
@@ -157,6 +171,16 @@ function addDesign() {
 			latestDiv.css("display","none");
 		}
 	}.bind(latestDiv));
+	if (touchSupported) {
+		latest.on("tap",function() {
+			if(latestDiv.css("display") === "none") {
+				latestDiv.css("display","block");
+			}
+			else {
+				latestDiv.css("display","none");
+			}
+		}.bind(latestDiv));
+	}
 
 	projectList.append(latest);
 	projectList.append(latestDiv);
@@ -178,7 +202,7 @@ function addDesign() {
 	var posters = $("<h2></h2>");
 	posters.addClass("projectTitle");
 	posters.append("posters");
-	posters.on("click tap",function() {
+	posters.on("click",function() {
 		if(postersDiv.css("display") === "none") {
 			postersDiv.css("display","block");
 		}
@@ -186,7 +210,16 @@ function addDesign() {
 			postersDiv.css("display","none");
 		}
 	}.bind(postersDiv));
-
+	if (touchSupported) {
+		posters.on("tap",function() {
+			if(postersDiv.css("display") === "none") {
+				postersDiv.css("display","block");
+			}
+			else {
+				postersDiv.css("display","none");
+			}
+		}.bind(postersDiv));
+	}
 
 	projectList.append(posters);
 	projectList.append(postersDiv);
@@ -251,7 +284,7 @@ function addCode() {
 	var tutorme = $("<h2></h2>");
 	tutorme.addClass("projectTitle");
 	tutorme.append("tutor me");
-	tutorme.on("click tap",function() {
+	tutorme.on("click",function() {
 		if(tutormeDiv.css("display") === "none") {
 			tutormeDiv.css("display","block");
 		}
@@ -259,6 +292,16 @@ function addCode() {
 			tutormeDiv.css("display","none");
 		}
 	}.bind(tutormeDiv));
+	if (touchSupported) {
+		tutorme.on("tap",function() {
+			if(tutormeDiv.css("display") === "none") {
+				tutormeDiv.css("display","block");
+			}
+			else {
+				tutormeDiv.css("display","none");
+			}
+		}.bind(tutormeDiv));
+	}
 
 	projectList.append(tutorme);
 	projectList.append(tutormeDiv);
@@ -283,7 +326,7 @@ function addCode() {
 	var notetaker = $("<h2></h2>");
 	notetaker.addClass("projectTitle notetaker");
 	notetaker.append("notetaker");
-	notetaker.on("click tap",function() {
+	notetaker.on("click",function() {
 		if(notetakerDiv.css("display") === "none") {
 			notetakerDiv.css("display","block");
 		}
@@ -291,6 +334,16 @@ function addCode() {
 			notetakerDiv.css("display","none");
 		}
 	}.bind(notetakerDiv));
+	if (touchSupported) {
+		notetaker.on("tap",function() {
+			if(notetakerDiv.css("display") === "none") {
+				notetakerDiv.css("display","block");
+			}
+			else {
+				notetakerDiv.css("display","none");
+			}
+		}.bind(notetakerDiv));
+	}
 
 	projectList.append(notetaker);
 	projectList.append(notetakerDiv);
@@ -312,7 +365,7 @@ function addCode() {
 	var fig = $("<h2></h2>");
 	fig.addClass("projectTitle");
 	fig.append("fig");
-	fig.on("click tap",function() {
+	fig.on("click",function() {
 		if(figDiv.css("display") === "none") {
 			figDiv.css("display","block");
 		}
@@ -320,6 +373,16 @@ function addCode() {
 			figDiv.css("display","none");
 		}
 	}.bind(figDiv));
+	if (touchSupported) {
+		fig.on("tap",function() {
+			if(figDiv.css("display") === "none") {
+				figDiv.css("display","block");
+			}
+			else {
+				figDiv.css("display","none");
+			}
+		}.bind(figDiv));
+	}
 
 	projectList.append(fig);
 	projectList.append(figDiv);
@@ -339,7 +402,7 @@ function addCode() {
 	var apollo = $("<h2></h2>");
 	apollo.addClass("projectTitle");
 	apollo.append("apollo");
-	apollo.on("click tap",function() {
+	apollo.on("click",function() {
 		if(apolloDiv.css("display") === "none") {
 			apolloDiv.css("display","block");
 		}
@@ -347,6 +410,16 @@ function addCode() {
 			apolloDiv.css("display","none");
 		}
 	}.bind(apolloDiv));
+	if (touchSupported) {
+		apollo.on("tap",function() {
+			if(apolloDiv.css("display") === "none") {
+				apolloDiv.css("display","block");
+			}
+			else {
+				apolloDiv.css("display","none");
+			}
+		}.bind(apolloDiv));
+	}
 
 	projectList.append(apollo);
 	projectList.append(apolloDiv);
@@ -411,7 +484,7 @@ function addDo() {
 	var kappa = $("<h2></h2>");
 	kappa.addClass("projectTitle");
 	kappa.append("kappa kappa gamma");
-	kappa.on("click tap",function() {
+	kappa.on("click",function() {
 		if(kappaDiv.css("display") === "none") {
 			kappaDiv.css("display","block");
 		}
@@ -419,6 +492,16 @@ function addDo() {
 			kappaDiv.css("display","none");
 		}
 	}.bind(kappaDiv));
+	if (touchSupported) {
+		kappa.on("tap",function() {
+			if(kappaDiv.css("display") === "none") {
+				kappaDiv.css("display","block");
+			}
+			else {
+				kappaDiv.css("display","none");
+			}
+		}.bind(kappaDiv));
+	}
 
 	projectList.append(kappa);
 	projectList.append(kappaDiv);
@@ -439,7 +522,7 @@ function addDo() {
 	var apex = $("<h2></h2>");
 	apex.addClass("projectTitle");
 	apex.append("apex");
-	apex.on("click tap",function() {
+	apex.on("click",function() {
 		if(apexDiv.css("display") === "none") {
 			apexDiv.css("display","block");
 		}
@@ -447,6 +530,16 @@ function addDo() {
 			apexDiv.css("display","none");
 		}
 	}.bind(apexDiv));
+	if (touchSupported) {
+		apex.on("tap",function() {
+			if(apexDiv.css("display") === "none") {
+				apexDiv.css("display","block");
+			}
+			else {
+				apexDiv.css("display","none");
+			}
+		}.bind(apexDiv));
+	}
 
 	projectList.append(apex);
 	projectList.append(apexDiv);
@@ -464,7 +557,7 @@ function addDo() {
 	var infant = $("<h2></h2>");
 	infant.addClass("projectTitle");
 	infant.append("infant language learning lab");
-	infant.on("click tap",function() {
+	infant.on("click",function() {
 		if(infantDiv.css("display") === "none") {
 			infantDiv.css("display","block");
 		}
@@ -472,6 +565,16 @@ function addDo() {
 			infantDiv.css("display","none");
 		}
 	}.bind(infantDiv));
+	if (touchSupported) {
+		infant.on("tap",function() {
+			if(infantDiv.css("display") === "none") {
+				infantDiv.css("display","block");
+			}
+			else {
+				infantDiv.css("display","none");
+			}
+		}.bind(infantDiv));
+	}
 
 	projectList.append(infant);
 	projectList.append(infantDiv);
