@@ -115,7 +115,7 @@ if (touchSupported) {
         var val = e.originalEvent.targetTouches[0].pageY;
 
         var div = $(".projects");
-        var delta = div.data("originY") - val;
+        var delta = val - div.data("originY");
 
         var top = parseInt(div.css("top"));
         var height = $(document).height();
