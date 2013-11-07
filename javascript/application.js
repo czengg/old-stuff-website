@@ -103,42 +103,43 @@ var touchSupported = (('ontouchstart' in window) ||
 // if touch events are supported, tie our animation to the position to these events as well
 if (touchSupported) {
 
-    $(".projects").bind("touchstart", function(e) {
+    $(window).bind("touchstart", function(e) {
+        e.preventDefault();
         var val = e.currentTarget.scrollY;
         $(".projects").data("originY",val);
     })
 
-    $(".projects")
-        .bind("touchmove", function(e) {
-            var val = e.currentTarget.scrollY;
-            event.preventDefault();
+    $(window).bind("touchmove", function(e) {
 
-            var delta = this.data("originY") - val;
-            var div = $(this);
+        event.preventDefault();
+        var val = e.currentTarget.scrollY;
 
-            var top = parseInt(div.css("top"));
-            var height = $(document).height();
-            var divHeight = parseInt(div.css("height"));
-            var width = $(document).width();
+        var div = $(".projects");
+        var delta = div.data("originY") - val;
 
-            var prop;
-            if(width > 600) {
-                prop = .2;
+        var top = parseInt(div.css("top"));
+        var height = $(document).height();
+        var divHeight = parseInt(div.css("height"));
+        var width = $(document).width();
+
+        var prop;
+        if(width > 600) {
+            prop = .2;
+        }
+        else {
+            prop = .45;
+        }
+
+        if (delta > 0) {
+            if(top < (prop*height)) {
+                div.css("top", parseInt(div.css("top"))+10);
             }
-            else {
-                prop = .45;
+        } else {
+            if((top+divHeight) > height) {
+                div.css("top", parseInt(div.css("top"))-10);
             }
-
-            if (delta > 0) {
-                if(top < (prop*height)) {
-                    div.css("top", parseInt(div.css("top"))+10);
-                }
-            } else {
-                if((top+divHeight) > height) {
-                    div.css("top", parseInt(div.css("top"))-10);
-                }
-            }
-        });
+        }
+    });
 }
 
 // $(".projects").swipe({
