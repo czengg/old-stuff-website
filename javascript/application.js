@@ -47,7 +47,7 @@ $(".projects").mousewheel(function(event,delta){
         	div.css("top", parseInt(div.css("top"))+10);
     	}
     } else {
-    	if((top+divHeight) > height) {
+    	if((top+divHeight+(.2*height)) > height) {
         	div.css("top", parseInt(div.css("top"))-10);
     	}
     }
@@ -135,7 +135,7 @@ if (touchSupported) {
                 div.css("top", parseInt(div.css("top"))+30);
             }
         } else {
-            if((top+divHeight) > height) {
+            if((top+divHeight+(.2*height)) > height) {
                 div.css("top", parseInt(div.css("top"))-30);
             }
         }
