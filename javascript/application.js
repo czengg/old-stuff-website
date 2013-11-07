@@ -105,14 +105,14 @@ if (touchSupported) {
 
     $(window).bind("touchstart", function(e) {
         e.preventDefault();
-        var val = e.currentTarget.scrollY;
+        var val = e.originalEvent.targetTouches[0].pageY;
         $(".projects").data("originY",val);
     })
 
     $(window).bind("touchmove", function(e) {
 
         event.preventDefault();
-        var val = e.currentTarget.scrollY;
+        var val = e.originalEvent.targetTouches[0].pageY;
 
         var div = $(".projects");
         var delta = div.data("originY") - val;
@@ -132,11 +132,11 @@ if (touchSupported) {
 
         if (delta > 0) {
             if(top < (prop*height)) {
-                div.css("top", parseInt(div.css("top"))+10);
+                div.css("top", parseInt(div.css("top"))+30);
             }
         } else {
             if((top+divHeight) > height) {
-                div.css("top", parseInt(div.css("top"))-10);
+                div.css("top", parseInt(div.css("top"))-30);
             }
         }
     });
