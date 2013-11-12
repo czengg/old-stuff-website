@@ -59,42 +59,40 @@ $(".projects").mousewheel(function(event,delta){
     }
 }); 
 
-// $(".projects").on("scrollstart",function(event) {
-// 	var touch = event.touches[0];
-//     $(".projects").data("originY",touch.pageY)
-// })
+$(window).keypress(function(event){
 
-// $(".projects").on("scrollstop",function(event) {
-// 	event.preventDefault();
+    var div = $(this);
 
-// 	var touch = event.touches[0];
-// 	var delta = this.data("originY") - touch.pageY;
-// 	var div = $(this);
+    var top = parseInt(div.css("top"));
+    var height = $(document).height();
+    var divHeight = parseInt(div.css("height"));
+    var width = $(document).width();
 
-//     var top = parseInt(div.css("top"));
-//     var height = $(document).height();
-//     var divHeight = parseInt(div.css("height"));
-//     var width = $(document).width();
+    var prop;
+    if(width > 600) {
+        prop = .2;
+    }
+    else {
+        prop = .45;
+    }
 
-//     var prop;
-//     if(width > 600) {
-//     	prop = .2;
-//     }
-//     else {
-//     	prop = .45;
-//     }
+    if (event.keyCode == 40 && event.keyCode == 34) {
+        if(top < (prop*height)) {
+            div.css("top", parseInt(div.css("top"))+10);
+        }
+    } 
+    else if(event.keyCode == 38 && event.keyCode == 33) {
+        if((top+divHeight+(.2*height)) > height) {
+            div.css("top", parseInt(div.css("top"))-10);
+        }
+    }
 
-//     if (delta > 0) {
-//     	if(top < (prop*height)) {
-//         	div.css("top", parseInt(div.css("top"))+delta);
-//     	}
-//     } else {
-//     	if((top+divHeight) > height) {
-//         	div.css("top", parseInt(div.css("top"))-delta);
-//     	}
-//     }
-
-// })
+    if (parseInt(div.css("top")) < 0) {
+        $(".go-top").fadeIn(200);
+    } else {
+        $(".go-top").fadeOut(200);
+    }
+}); 
 
 // touch event check stolen from Modernizr
 var touchSupported = (('ontouchstart' in window) ||
@@ -141,61 +139,6 @@ if (touchSupported) {
         }
     });
 }
-
-// $(".projects").swipe({
-//     swipeUp:function(event, direction, distance, duration, fingerCount) {
-//         var div = $(this);
-
-//         var top = parseInt(div.css("top"));
-//         var height = $(document).height();
-//         var divHeight = parseInt(div.css("height"));
-//         var width = $(document).width();
-
-//         var prop;
-//         if(width > 600) {
-//             prop = .2;
-//         }
-//         else {
-//             prop = .45;
-//         }
-
-//         if((top+divHeight) > height) {
-//             div.css("top", parseInt(div.css("top"))-70);
-//         }
-
-//         if (parseInt(div.css("top")) < 0) {
-//             $(".go-top").fadeIn(200);
-//         } else {
-//             $(".go-top").fadeOut(200);
-//         }
-//     },
-//     swipeDown:function(event, direction, distance, duration, fingerCount) {
-//         var div = $(this);
-
-//         var top = parseInt(div.css("top"));
-//         var height = $(document).height();
-//         var divHeight = parseInt(div.css("height"));
-//         var width = $(document).width();
-
-//         var prop;
-//         if(width > 600) {
-//             prop = .2;
-//         }
-//         else {
-//             prop = .45;
-//         }
-
-//         if((top+divHeight) > height) {
-//             div.css("top", parseInt(div.css("top"))+70);
-//         }
-
-//         if (parseInt(div.css("top")) < 0) {
-//             $(".go-top").fadeIn(200);
-//         } else {
-//             $(".go-top").fadeOut(200);
-//         }
-//     }
-// });
 
 $(".go-top").on("click tap",function(event) {
     event.preventDefault();
