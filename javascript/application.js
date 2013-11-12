@@ -59,9 +59,9 @@ $(".projects").mousewheel(function(event,delta){
     }
 }); 
 
-$(window).keypress(function(event){
+$(window).keydown(function(event){
 
-    var div = $(this);
+    var div = $(".projects");
 
     var top = parseInt(div.css("top"));
     var height = $(document).height();
@@ -76,14 +76,14 @@ $(window).keypress(function(event){
         prop = .45;
     }
 
-    if (event.keyCode == 40 && event.keyCode == 34) {
+    if (event.keyCode == 38 || event.keyCode == 33) {
         if(top < (prop*height)) {
-            div.css("top", parseInt(div.css("top"))+10);
+            div.css("top", parseInt(div.css("top"))+50);
         }
     } 
-    else if(event.keyCode == 38 && event.keyCode == 33) {
+    else if(event.keyCode == 40 || event.keyCode == 34) {
         if((top+divHeight+(.2*height)) > height) {
-            div.css("top", parseInt(div.css("top"))-10);
+            div.css("top", parseInt(div.css("top"))-50);
         }
     }
 
