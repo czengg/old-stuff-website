@@ -126,19 +126,23 @@ function addDesign() {
 	bny.append("bny mellon internship");
 	bny.on("click",function() {
 		if(bnyDiv.css("display") === "none") {
-			bnyDiv.css("display","block");
+			//bnyDiv.css("display","block");
+            bnyDiv.slideDown();
 		}
 		else {
-			bnyDiv.css("display","none");
+			//bnyDiv.css("display","none");
+            bnyDiv.slideUp();
 		}
 	}.bind(bnyDiv));
 	if (touchSupported) {
 		bny.on("tap",function() {
 			if(bnyDiv.css("display") === "none") {
-				bnyDiv.css("display","block");
+				//bnyDiv.css("display","block");
+                bnyDiv.slideDown();
 			}
 			else {
-				bnyDiv.css("display","none");
+				//bnyDiv.css("display","none");
+                bnyDiv.slideUp();
 			}
 		}.bind(bnyDiv));
 	}
@@ -165,19 +169,23 @@ function addDesign() {
 	latest.append("thelatest internship");
 	latest.on("click",function() {
 		if(latestDiv.css("display") === "none") {
-			latestDiv.css("display","block");
+			//latestDiv.css("display","block");
+            latestDiv.slideDown();
 		}
 		else {
-			latestDiv.css("display","none");
+			//latestDiv.css("display","none");
+            latestDiv.slideUp();
 		}
 	}.bind(latestDiv));
 	if (touchSupported) {
 		latest.on("tap",function() {
 			if(latestDiv.css("display") === "none") {
-				latestDiv.css("display","block");
+				//latestDiv.css("display","block");
+                latestDiv.slideDown();
 			}
 			else {
-				latestDiv.css("display","none");
+				//latestDiv.css("display","none");
+                latestDiv.slideUp();
 			}
 		}.bind(latestDiv));
 	}
@@ -204,19 +212,23 @@ function addDesign() {
 	posters.append("posters");
 	posters.on("click",function() {
 		if(postersDiv.css("display") === "none") {
-			postersDiv.css("display","block");
+            postersDiv.slideDown();
+			//postersDiv.css("display","block");
 		}
 		else {
-			postersDiv.css("display","none");
+			//postersDiv.css("display","none");
+            postersDiv.slideUp();
 		}
 	}.bind(postersDiv));
 	if (touchSupported) {
 		posters.on("tap",function() {
 			if(postersDiv.css("display") === "none") {
-				postersDiv.css("display","block");
+				postersDiv.slideDown();
+    	    	//postersDiv.css("display","block");
 			}
 			else {
-				postersDiv.css("display","none");
+			    //postersDiv.css("display","none");
+                postersDiv.slideUp();
 			}
 		}.bind(postersDiv));
 	}
@@ -286,19 +298,23 @@ function addCode() {
 	tutorme.append("tutor me");
 	tutorme.on("click",function() {
 		if(tutormeDiv.css("display") === "none") {
-			tutormeDiv.css("display","block");
+			//tutormeDiv.css("display","block");
+            tutormeDiv.slideDown();
 		}
 		else {
-			tutormeDiv.css("display","none");
+			//tutormeDiv.css("display","none");
+            tutormeDiv.slideUp();
 		}
 	}.bind(tutormeDiv));
 	if (touchSupported) {
 		tutorme.on("tap",function() {
 			if(tutormeDiv.css("display") === "none") {
-				tutormeDiv.css("display","block");
+				//tutormeDiv.css("display","block");
+                tutormeDiv.slideDown();
 			}
 			else {
-				tutormeDiv.css("display","none");
+				//tutormeDiv.css("display","none");
+                tutormeDiv.slideUp();
 			}
 		}.bind(tutormeDiv));
 	}
@@ -328,19 +344,23 @@ function addCode() {
 	notetaker.append("notetaker");
 	notetaker.on("click",function() {
 		if(notetakerDiv.css("display") === "none") {
-			notetakerDiv.css("display","block");
+			//notetakerDiv.css("display","block");
+            notetakerDiv.slideDown();
 		}
 		else {
-			notetakerDiv.css("display","none");
+			//notetakerDiv.css("display","none");
+            notetakerDiv.slideUp();
 		}
 	}.bind(notetakerDiv));
 	if (touchSupported) {
 		notetaker.on("tap",function() {
 			if(notetakerDiv.css("display") === "none") {
-				notetakerDiv.css("display","block");
+				//notetakerDiv.css("display","block");
+                notetakerDiv.slideDown();
 			}
 			else {
-				notetakerDiv.css("display","none");
+				//notetakerDiv.css("display","none");
+                notetakerDiv.slideUp();
 			}
 		}.bind(notetakerDiv));
 	}
@@ -367,19 +387,23 @@ function addCode() {
 	fig.append("fig");
 	fig.on("click",function() {
 		if(figDiv.css("display") === "none") {
-			figDiv.css("display","block");
+			//figDiv.css("display","block");
+            figDiv.slideDown();
 		}
 		else {
-			figDiv.css("display","none");
+			//figDiv.css("display","none");
+            figDiv.slideUp();
 		}
 	}.bind(figDiv));
 	if (touchSupported) {
 		fig.on("tap",function() {
 			if(figDiv.css("display") === "none") {
-				figDiv.css("display","block");
+				//figDiv.css("display","block");
+                figDiv.slideDown();
 			}
 			else {
-				figDiv.css("display","none");
+				//figDiv.css("display","none");
+                figDiv.slideUp();
 			}
 		}.bind(figDiv));
 	}
@@ -404,19 +428,23 @@ function addCode() {
 	apollo.append("apollo");
 	apollo.on("click",function() {
 		if(apolloDiv.css("display") === "none") {
-			apolloDiv.css("display","block");
+			//apolloDiv.css("display","block");
+            apolloDiv.slideDown();
 		}
 		else {
-			apolloDiv.css("display","none");
+			//apolloDiv.css("display","none");
+            apolloDiv.slideUp();
 		}
 	}.bind(apolloDiv));
 	if (touchSupported) {
 		apollo.on("tap",function() {
 			if(apolloDiv.css("display") === "none") {
-				apolloDiv.css("display","block");
+				//apolloDiv.css("display","block");
+                apolloDiv.slideDown();
 			}
 			else {
-				apolloDiv.css("display","none");
+				//apolloDiv.css("display","none");
+                apolloDiv.slideUp();
 			}
 		}.bind(apolloDiv));
 	}
@@ -486,19 +514,23 @@ function addDo() {
 	kappa.append("kappa kappa gamma");
 	kappa.on("click",function() {
 		if(kappaDiv.css("display") === "none") {
-			kappaDiv.css("display","block");
+			//kappaDiv.css("display","block");
+            kappaDiv.slideDown();
 		}
 		else {
-			kappaDiv.css("display","none");
+			//kappaDiv.css("display","none");
+            kappaDiv.slideUp();
 		}
 	}.bind(kappaDiv));
 	if (touchSupported) {
 		kappa.on("tap",function() {
 			if(kappaDiv.css("display") === "none") {
-				kappaDiv.css("display","block");
+				//kappaDiv.css("display","block");
+                kappaDiv.slideDown();
 			}
 			else {
-				kappaDiv.css("display","none");
+				//kappaDiv.css("display","none");
+                kappaDiv.slideUp();
 			}
 		}.bind(kappaDiv));
 	}
@@ -524,19 +556,23 @@ function addDo() {
 	apex.append("apex");
 	apex.on("click",function() {
 		if(apexDiv.css("display") === "none") {
-			apexDiv.css("display","block");
+			//apexDiv.css("display","block");
+            apexDiv.slideDown();
 		}
 		else {
-			apexDiv.css("display","none");
+			//apexDiv.css("display","none");
+            apexDiv.slideUp();
 		}
 	}.bind(apexDiv));
 	if (touchSupported) {
 		apex.on("tap",function() {
 			if(apexDiv.css("display") === "none") {
-				apexDiv.css("display","block");
+				//apexDiv.css("display","block");
+                apexDiv.slideDown();
 			}
 			else {
-				apexDiv.css("display","none");
+				//apexDiv.css("display","none");
+                apexDiv.slideUp();
 			}
 		}.bind(apexDiv));
 	}
@@ -559,19 +595,23 @@ function addDo() {
 	infant.append("infant language learning lab");
 	infant.on("click",function() {
 		if(infantDiv.css("display") === "none") {
-			infantDiv.css("display","block");
+			//infantDiv.css("display","block");
+            infantDiv.slideDown();
 		}
 		else {
-			infantDiv.css("display","none");
+			//infantDiv.css("display","none");
+            infantDiv.slideUp();
 		}
 	}.bind(infantDiv));
 	if (touchSupported) {
 		infant.on("tap",function() {
 			if(infantDiv.css("display") === "none") {
-				infantDiv.css("display","block");
+				//infantDiv.css("display","block");
+                infantDiv.slideDown();
 			}
 			else {
-				infantDiv.css("display","none");
+				//infantDiv.css("display","none");
+                infantDiv.slideUp();
 			}
 		}.bind(infantDiv));
 	}
