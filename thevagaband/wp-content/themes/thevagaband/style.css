@@ -1,0 +1,496 @@
+/*
+Theme Name: thevagaband
+Theme URI:
+Description: custom WordPress for thevagaband.com
+Author: thevagaband
+Author URI: http://cindyzeng.com
+Version: 0.1
+Tags: czengg, cindyzeng
+
+This theme is property of Cindy Zeng and is not available for public use.
+ 
+*/
+
+/*** GLOBAL : GENERAL STYLE DEFAULTS ***/
+html
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background: #fff;
+	margin: 0;
+}
+body, input, textarea
+{
+	color: #222;    
+	font-family: Arial, sans-serif;
+	line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6
+{ 
+	font-weight: normal;
+	clear: both;
+}
+hr
+{
+	background-color: #999;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+pre
+{
+	font: 11px Monaco, monospace;
+	line-height: 1.5;
+	margin-bottom: 1.5em;
+}
+code
+{
+	font: 11px Monaco, monospace;
+}
+p
+{
+	margin: 4px 0 12px 0;
+}
+a
+{
+	color: #292e42;
+}
+a:hover
+{
+	color: #77b0a6;
+}
+a:visited
+{
+	/*color: #000000;*/
+}
+
+
+
+/*** PAGE LAYOUT ***/
+
+/* Styles that affect the entire layout of the page */
+div#container
+{
+	margin: 4px 4px 4px 4px;
+	margin-left: 250px;
+}
+div#content
+{
+	font-family: "Raleway";
+	font-weight: 500;
+	font-size: 15px;
+	margin:100px auto;
+}
+
+div#main
+{
+	width: 98%;
+	min-width: 400px;
+}
+
+/*** HEADER : MENU ***/
+
+/* To see a menu in your header, you'll need to first add one in WordPress Admin */
+.menu ul
+{
+    list-style: none;
+    margin: 0;
+}
+.menu ul ul
+{
+    display: none;
+}
+.menu li
+{
+    display: inline;
+    float: left;
+	padding: 0 8px 0 4px;
+}
+.menu-item
+{
+	
+}
+.menu-item a
+{
+	font-size: 30px;
+	text-decoration: none;
+	color: #3eaf00;
+}
+.menu-item a:hover
+{
+	color: #5d8a05;
+}
+
+
+
+/*** HEADER : OTHER ***/
+
+
+
+/*** CONTENT : POSTS AND PAGES ***/
+
+/* Entry and Page Titles */
+h1.entry-title
+{
+	font-family: "Bitter";
+	text-decoration: none;
+	font-size: 40px;
+}
+h2.entry-title
+{
+	font-family: "Bitter";
+	text-decoration: none;
+	font-size: 30px;
+}
+h2.entry-title a
+{
+	font-family: "Bitter";
+	text-decoration: none;
+	font-size: 30px;
+}
+h1.page-title
+{
+	font-family: "Bitter";
+	text-decoration: none;
+	font-size: 50px;
+}
+
+/* Media Alignment */
+.alignright
+{
+	/* Style for right-aligned images in posts */
+	padding: 8px 0 8px 8px;
+	float: right;
+}
+.alignleft
+{
+	/* Style for left-aligned images in posts */
+	padding: 8px 8px 8px 0;
+	float: left;
+}
+
+/* Entry Content */
+.entry-content
+{
+	/* Style that affects actual entry/post content */
+	font-family: "Raleway";
+	font-weight: 500;
+	font-size: 15px;
+}
+.entry-content a
+{
+	font-family: "Raleway";
+	font-weight: 600;
+}
+.entry-content a:hover
+{
+	font-family: "Raleway";
+	font-weight: 600;
+}
+.entry-content h1, h2, h3, h4, h5
+{
+	font-family: "Raleway";
+	font-weight: 600;
+}
+.entry-content ol li
+{
+	font-family: "Raleway";
+	font-weight: 500;
+}
+
+.entry-utility
+{
+	/* Style for the entry utility, which sits below a post and provides info like categories, tags, feeds, and an edit link (for authors) */
+	font-family: "Bitter";
+}
+.entry-meta
+{
+	/* Style for the entry metadata (author, etc.) */
+	font-family: "Raleway";
+	font-weight: 300;
+	margin-top: -30px;
+	margin-bottom: 20px;
+}
+.skip-link
+{
+	/* Style for the skip link */
+	/*position: absolute;
+	left: -9000px;*/
+}
+.navigation
+{
+	/* Style for the navigation links (next/previous post) on a given post */
+}
+
+
+/*** CONTENT : COMMENTS ***/
+
+div#comments
+{
+	/* Style that affects the DIV containing all the comments */
+	font-family: "Raleway";
+	font-weight: 500;
+}
+.comments h3
+{
+	/* H3 header style for comments */
+	font-family: "Bitter";
+}
+.comments ol
+{
+	/* Comments are displayed as ordered lists by default, so you want to style that list so it looks the way you want */
+	font-family: "Raleway";
+	font-weight: 500;
+}
+.comments ol li
+{
+	/* Style each list item in the comments ordered list */
+	font-family: "Raleway";
+	font-weight: 500;
+	list-style-type: none;
+}
+.comments img
+{
+	/* Style for the user avatar beside each comment */
+	float: left;
+	margin: 0 12px 8px 0;
+}
+.comments .comment
+{
+	/* Style that applies to each individual comment in a series of comments */
+	font-family: "Raleway";
+	font-weight: 500;
+}
+
+.children ul li
+{
+	/* A style that refers to the children (as in, responses to) any given comment */
+}
+
+.comment-reply-link
+{
+	/* Style for the "Reply" link on a comment */
+	font-family: "Raleway";
+	font-weight: 300;
+}
+.comment-meta
+{
+	/* Style for metadata for a comment */
+	font-family: "Raleway";
+	font-weight: 300;
+}
+div#respond
+{
+	/* DIV that contains the comment response form */
+	font-family: "Raleway";
+	font-weight: 500;
+}
+div#respond h3
+{
+	/* H3 header for the comment response form */
+	font-family: "Raleway";
+	font-weight: 600;
+}
+
+.comment-author
+{
+	font-family: "Bitter";
+}
+
+
+/*** CONTENT : SIDEBAR ***/
+div#primary
+{
+	/* Primary Widget Area DIV */
+}
+div#secondary
+{
+	/* Secondary Widget Area DIV */
+}
+.widget-area
+{
+	/* Class that applies to BOTH widget areas */
+}
+.xoxo
+{
+	/* Class that applies to each item in each widget area (an unordered list class) */
+}
+
+
+/*** FOOTER ***/
+div#footer
+{
+	float: left;
+	clear: both;
+}
+
+
+/*** YOUR CSS ***/
+
+#custom-side-nav
+{
+	position: fixed;
+	left: 0px;
+	width: 200px;
+	display: inline-block;
+	font-family: "Bitter";
+}
+
+#custom-side-nav-list
+{
+	list-style: none;
+}
+
+#custom-side-nav-list>a
+{
+	color:black;
+	cursor: pointer;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+#custom-side-nav-list>a:hover
+{
+	color: #77b0a6;
+}
+
+.nav-link
+{
+	margin-left: 25px;
+}
+
+#vagaband-logo
+{
+	width: 200px;
+	overflow: hidden;
+}
+
+
+
+/*VIEWPORT FOR WIDTH 550 AND LESSER*/
+
+@media all and (max-width: 550px)
+{
+
+	body
+	{
+		margin-top: -100px;
+	}
+
+	#main
+	{
+		text-align: center;
+	}
+
+	#custom-side-nav
+	{
+        	position: fixed;
+		top: 0px;
+        	width: 100%;
+        	display: block;
+		margin-left: -8%;
+		background-color: white;
+	}
+
+	#custom-side-nav-list
+	{
+		text-align: center;
+	}	
+
+	#custom-side-nav-list>a
+	{
+	}
+
+	#vagaband-logo
+	{
+		margin-left: 30px;
+	}
+
+	.nav-link
+	{
+		display: inline-block;
+	}
+
+	.only-full
+	{
+		display: none;
+	}
+
+	div#container
+	{
+		padding-left: 25px;
+		padding-right: 25px;
+		margin-left: 0px;
+		margin-top: 200px;
+	}
+
+	div#content
+	{
+		margin-top: 0px;
+	}
+
+}
+/*
+@media only screen and (max-width : 320px)
+{
+	body
+        {
+                margin-top: -100px;
+        }
+
+        #main
+        {
+                text-align: center;
+        }
+
+        #custom-side-nav
+        {
+                position: fixed;
+                top: 0px;
+                width: 100%;
+                display: block;
+                margin-left: -8%;
+                background-color: white;
+        }
+
+        #custom-side-nav-list
+        {
+                text-align: center;
+        }
+
+        #custom-side-nav-list>a
+        {
+        }
+
+        #vagaband-logo
+        {
+                margin-left: 30px;
+        }
+
+        .nav-link
+        {
+                display: inline-block;
+        }
+
+        .only-full
+        {
+                display: none;
+	}
+
+	div#container
+        {
+                padding-left: 25px;
+                padding-right: 25px;
+                margin-left: 0px;
+                margin-top: 200px;
+        }
+
+        div#content
+        {
+                margin-top: 0px;
+        }
+}*/
+
