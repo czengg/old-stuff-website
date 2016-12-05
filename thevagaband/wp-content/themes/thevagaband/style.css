@@ -368,7 +368,11 @@ div#footer
 	overflow: hidden;
 }
 
-
+.center_feed_button img
+{
+	width: 25%;
+	height: 25%;
+}
 
 /*VIEWPORT FOR WIDTH 550 AND LESSER*/
 

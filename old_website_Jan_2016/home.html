@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    
+<!--  STYLINGS  -->
+    <link href="http://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="stylesheets/home.css">
+    
+<!-- JAVASCRIPTS   -->
+    <script src="javascript/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <div class="name">
+            <h1 id="first">Cindy</h1>
+            <h1 id="last">Zeng</h1>
+        </div>
+        
+<!--   ICONS    -->
+        <div class="icons">
+            <div class="social" id="facebook"></div>
+            <div class="social" id="linkedin"></div>
+            <div class="social" id="twitter"></div>
+            <div class="social" id="email"></div>
+        </div>
+        
+<!--   BILLBOARD NAV     -->
+        <div class="billboard">
+            <div class="design">
+                <h1 class="motto nav">Design</h1>
+                <h1 class="motto motto-end">&nbsp;Well.</h1>
+            </div>
+            <div class="code">
+                <h1 class="motto nav">Code</h1>
+                <h1 class="motto motto-end">&nbsp;Smart.</h1>
+            </div>
+            <div class="do">
+                <h1 class="motto nav">Do</h1>
+                <h1 class="motto motto-end">&nbsp;Good.</h1>
+            </div>
+        </div>
+        
+        <div class="projects clickme">
+            
+<!--    LEARN MORE    -->
+            <div id="welcome">
+                <h1>Click to learn more!</h1>
+            </div>
+            
+<!--    BIO        -->
+            <div id="bio">
+                <h1 class="title inline">about me |</h1>
+                <h2 class="resume title" onclick="window.open('resume.pdf', '_blank')">resume</h2>
+                <img src="images/about-me.jpg"></img>
+                <p class="textBody">
+                    I am a senior information systems major with a double major in human-computer interaction at Carnegie Mellon University. I am interested in web development and web-based applications. Primarily, I'm focused on front-end development of a web application, working with small teams to create and deploy projects. I've had my fair share of experience working with multiple javascript libraries, integrating apis, and running my own server.
+                    <br>
+                    <br>
+                    Aside from developing personal projects, I am involved in several activities on campus. I am a part of greek life where we fundrase for our local philanthropy as well as do community service as a way of giving back. Aside from being in a sorority, I am a research assistant with the Social Computing group of the Human-Computer Interaction Institute at Carnegie Mellon University. In my free time, I enjoy playing the ukulele and guitar, discovering new bands and music, writing, and watching tv shows on hulu.
+                    <br>
+                    <br>
+                    Of course, the above is only a portion of who I am. If you'd like to learn more about me, feel free to email me at <a href="mailto:czeng@andrew.cmu.edu">czeng@andrew.cmu.edu</a>.
+                    <br>
+                    <br>
+                    For a full view of my technical skills, please refer to my resume.
+                </p>
+                <div class="bioTLDR">
+                    <h1>tl;dr</h1>
+                    <ul>
+                        <li>information systems major</li>
+                        <li>human-computer interaction double major</li>
+                        <li>web development</li>
+                        <li>user experience</li>
+                        <li>front-end development</li>
+                        <li>greek - kappa kappa gamma</li>
+                        <li>ukulele and guitar player</li>
+                        <li>tv lover</li>
+                    </ul>
+                </div>
+            </div>
+    
+<!--    DESIGN      -->
+            <div id="design">
+                <h1 class="title">design projects</h1>
+                <div class="projectList">
+                
+<!--        BNY MELLON          -->
+                    <h2 class="projectTitle" onclick="toggle('bny')">bny mellon internship</h2>
+                    <div class="textBody projectDetails" id="bny">
+                        <img src="images/bny-mellon.jpg"></img>
+                        <p>My role as an intern at BNY Mellon was to assist the user experience department on their various projects. Two projects that I had the pleasure of working on was the UX Library and the ADR website.</p>
+                        <p>The UX Library was an endeavor to bring a comprehensive user experience library that would be utilized for all future applications, giving a central look and feel to all new technologies.</p>
+                        <p>For the ADR site, I was responsible for helping restructure the popular client-facing site using rapid prototyping tools such as Axure.</p>
+                    </div>
+                    <div class="line"></div>            
+    
+<!--        THE LATEST          -->
+                    <h2 class="projectTitle" onclick="toggle('thelatest')">thelatest internship</h2>
+                    <div class="textBody projectDetails" id="thelatest">
+                        <img src="images/the-latest.png"></img>
+                        <p>Working at thelatest.com gave me a different perspective on how startups in its early stages operates. As an intern, I gained exposure to a variety of different roles in the company, giving me experience in a diversity of responsibilities.</p>
+                        <p>Thelatest.com is headed by Jeffrey Hall, former VP of Marketing Services at the LA Times. I was able to work very closely with Jeffrey and a group of mentors to formulate ideas and strategies for the company.</p>
+                        <p>As an intern, I contributed to the creation of the logo, layout, and fundraising efforts of the startup.</p>
+                    </div>
+                    <div class="line"></div>
+
+<!--        POSTERS PROJECT          -->
+                    <h2 class="projectTitle" onclick="toggle('posters')">poster designs</h2>
+                    <div class="textBody projectDetails" id="posters">
+                        <img src="images/swear-and-shake.png" style="margin-right:2%;"></img>
+                        <img src="images/pretty-lights.png"></img>
+                        <img src="images/the-knocks.png" style="margin-left:2%;"></img>
+                        <p>This mock poster series was done as a project for my fundamentals design class.</p>
+                        <p>The concept behind this poster series is utilizing letter shape to create a centralized illustration or feeling that conveys the artist's musical stylings.</p>
+                        <p>Swear and Shake is an indie folk band, giving it down-to-earth, nature-like qualities. Thus, the coloring followed that theme with the illustration of the S's lending way to ideas of comraderie and home.</p>
+                        <p>Pretty Lights is a electronic dj with warm undertones to his songs. There's a sense of being surrounded by acquaintances in a lounge in the 50s. Thus, the colors are overwhelmingly warm. The illustration of the P as the sun further drives the idea of warmth.</p>
+                        <p>The Knocks is an electronic duo with a very groovy sound. They seem, to me, to be an artist that you listen to surrounded by close friends, swaying and dancing. Thus, the colors have a warmth to them, but with a retro styling. The illustrations of the T and K are very straightforward, like the band, lanky and awkward but still cool.</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+<!--    CODE    -->
+            <div id="code">
+                <h1 class="title">coding projects</h1>
+                <div class="projectList">
+                    
+<!--        GITHUB      -->
+                    <h2 class="projectTitle" onclick="window.open('https://www.github.com/czengg', '_blank');">github</h2>
+                    <div class="line"></div>
+                    
+<!--        DRAWBRIDGE      -->
+                    <h2 class="projectTitle" onclick="toggle('drawbridge');">drawbridge internship</h2>
+                    <div class="textBody projectDetails" id="drawbridge">
+                        <img src="images/drawbridge.png"></img>
+                        <p>My role as a front-end software engineering intern at Drawbridge, a startup based in San Mateo, was to assist the front-end engineering department on various features and bug fixes each spring cycle. Unlike other internships where an intern is given a summer project for the entirety of the internship, I was treated as a full-time employee, implementing features and working with the engineering, marketing, and sales team to complete tasks for each sprint.</p>
+                        <p>Due to the relatively small nature of Drawbridge, the front-end engineering team consisted of two other full-time employees and myself. This gave me an amazing opportunity to gain experience in a variety of technologies as well as made me feel personally responsible and accountable for all the code I contributed to the codebase.</p>
+                        <p>I worked extensively with Javascript, PHP, and some Java during my time at drawbridge. I also gained further experience in frameworks such as base.js, d3, jQuery, underscore, etc.</p>
+                    </div>
+                    <div class="line"></div>
+                
+<!--        ZWP      -->
+                    <h2 class="projectTitle" onclick="toggle('zwp');">zwp student consulting</h2>
+                    <div class="textBody projectDetails" id="zwp">
+                        <img src="images/zwp.jpg"></img>
+                        <p>I had a great experience taking the role of lead software engineer and student consultant to Zero Waste Pittsburgh's intiative to try to bring the nonprofit into the technical era. I worked in a team of three to help aid Zero Waste Pittsburgh into taking the first steps of integrating technology into their current workflow.</p>
+                    <p>Our main point of contact was Kyle Winkler, the director of the program. With his help, we were able to understand the needs of the nonprofit and create an application to lessen the burden of the initial waste audit process, a free service in which Kyle performs a cursory waste audit to a potential customer.</p>
+                    <p>The final deliverable reduced turnaround time and wasted energy on this free initial 'sales pitch' as well as gave Kyle a centralized location to keep all future data.</p>
+                    <p>Technologies used in this project included Ruby on Rails, Paperclip, WickedPDF, etc.</p>
+                    </div>
+                    <div class="line"></div>                
+                    
+<!--        TUTOR ME      -->
+                    <h2 class="projectTitle" onclick="toggle('tutorme');">tutor me</h2>
+                    <div class="textBody projectDetails" id="tutorme">
+                        <p>Below is a short <a href='http://www.youtube.com/watch?v=nZ7IGpD4X4U'>clip</a> to get you acquainted with the TutorMe concept:</p>
+                        <iframe width="480" height="270" src="http://www.youtube.com/embed/nZ7IGpD4X4U?rel=0" frameboder="0"></iframe>
+                        <p><a href='http://tutorme.herokuapp.com/' target='_blank'>TutorMe is deployed on heroku.</a></p>
+                    </div>
+                    <div class="line"></div>
+
+<!--        NOTETAKER      -->
+                    <h2 class="projectTitle" onclick="toggle('notetaker');">notetaker</h2>
+                    <div class="textBody projectDetails" id="notetaker">
+                        <p>Below is a short <a href='http://www.youtube.com/watch?v=inXy9ol9O6s'>clip</a> to get you acquainted with the NoteTaker concept:</p>
+                        <iframe width="480" height="270" src="http://www.youtube.com/embed/inXy9ol9O6s?rel=0" frameboder="0"></iframe>
+                        <p><a href='http://rocky-earth-8065.herokuapp.com/' target='_blank'>NoteTaker is deployed on heroku.</a></p>
+                        <p>NoteTaker is a web application (written in Javascript), specializing in making note-taking easier. Users are able to save their notes (written in a custom markup language) onto their Google Drive folders as PDFs for later use.</p>
+                        <h2>Behind the Scenes:</h2>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Jquery Mobile</li>
+                            <li>MongoDB</li>
+                            <li>Google Authentication (OAuth)</li>
+                            <li>Custom Markup Language to HTML</li>
+                            <li>HTML to PDF</li>
+                            <li>HTML to PDF</li>
+                            <li>Google Drive PDF Saving</li>
+                        </ul>
+                    </div>
+                    <div class="line"></div>
+
+<!--        FIG.      -->
+                    <h2 class="projectTitle" onclick="toggle('fig');">fig.</h2>
+                    <div class="textBody projectDetails" id="fig">
+                        <p>Below is a short <a href='http://www.youtube.com/watch?v=0TbasjlRlTo'>clip</a> to get you acquainted with the Fig. concept:</p>
+                        <iframe width="480" height="270" src="http://www.youtube.com/embed/0TbasjlRlTo?rel=0" frameboder="0"></iframe>
+                        <p>Fig. is an image manipulation program written in Python.</p>
+                        <p><b>Features of Fig.</b>:</p>
+                        <p>Prokudin-Gorskii Negatives
+                            </br>
+                            <i>red, green, blue plates alignment</i>
+                            </br>
+                            Eight Filters:
+                            </br>
+                            <i>Blur, Contrast, Greyscale, Pencil, Sepia, Sharpen, Technicolor, Tile</i>
+                            </br>
+                            Fig.let
+                            </br>
+                            <i>edit parts of your image</i>
+                        </p>
+                    </div>
+                    <div class="line"></div>
+
+<!--        APOLLO      -->
+                    <h2 class="projectTitle" onclick="toggle('apollo');">apollo</h2>
+                    <div class="textBody projectDetails" id="apollo">
+                        <p>Below is a screenshot for the homepage of Apollo:</p>
+                        <img src="images/apollo.png"></img>
+                        <p><a href='http://salty-ocean-7948.herokuapp.com/' target='_blank'>Apollo is deployed on heroku.</a></p>
+                        <p>Apollo is a web application (written in Javascript), which allows users to discover new artists through searching artists they love.</p>
+                        <p>Apollo uses last.fm and 7digital API in order to find similar artists. Once a list is populated, the user can click through and find a suitable artist to learn more about. By spotlighting the artist, the user is provided with a bio, top tracks, and albums available for purchase on 7digital.</p>
+                        <p>Apollo is still very much in its developmental stages. There are some UI bugs that we'd like to fix as well as features we hope to add.</p>
+                    </div>
+
+                </div>
+            </div>
+            
+<!--    DO      -->
+            <div id="do">
+                <h1 class="title">do something projects</h1>
+                <div class="projectList">
+                    
+<!--        KAPPA      --> 
+                    <h2 class="projectTitle" onclick="toggle('kappa');">kappa kappa gamma</h2>
+                    <div class="textBody projectDetails" id="kappa">
+                        <p>greek life at carnegie mellon:</p>
+                        <img src="images/kappa.jpg"></img>
+                        <p>As a member of Kappa Kappa Gamma, I am involved in a great many things on campus. As a sorority, we have around 90some sisters. Amazingly all our sisters are extremely dedicated to our philanthropic efforts as well as raising our campus presence. We participate in school traditions such as greek sing and booth.</p>
+                        <p>Through joining a sorority, I have learned a great deal about leadership, teamwork, and how to building a two-story booth. Traditionally, Carnegie Mellon holds an event every year called Carnival. During Carnival week, classes are cancelled and the local community comes out to see the impressive booths that each organization has built for the event. These booths house games for the children and adults to play while walking through the booth. The artwork, both interior and exterior, are always extremely detailed and awards are given out to the best booths of the year.</p>
+                        <p>Below is a example of a booth:</p>
+                        <img src="http://farm1.static.flickr.com/185/466845684_39c3c04696.jpg?v=0"></img>
+                        <p>Aside from building booths, I was a recruitment counselor for our formal membership recruitment, an experience I enjoyed greatly. Being a recruitment counselor (rho sig) meant I was to disaffiliate from my chapter and provide non-bias advice to potential new members going through recruitment. Through this process, I served as a mentor to my group of girls, taking the role of a listener if they had concerns or doubts about the process or joining greek life. By being a rho sigma, I was able to interact with different types of girls and figure out how to properly communicate as well as give advice to them.</p>
+                        <p>Below was the group of girls I served as a rho sigma for:</p>
+                        <img src="images/rho-sig.jpg"></img>
+                    </div>
+                    <div class="line"></div>
+
+<!--        SOCIAL COMPUTING      -->
+                    <h2 class="projectTitle" onclick="toggle('hcii');">human-computer interaction institute</h2>
+                    <div class="textBody projectDetails" id="hcii">
+                        <p>research life at carnegie mellon:</p>
+                        <img src="images/social-computing.png"></img>
+                        <p>The Social Computing group of the Human-Computer Interaction Institute is focused on social computing and how the way we interact through technology has changed social norms.</p>
+                        <p>I first joined the Social Computing group as an Independent Study student working with Robert Kraut and Tatiana Vlahovic, designing a study that deals with how people interact on Facebook. I learned quite a bit about experimental design, questionnaire wording and content, experimental flow, etc. as well as contributed to more technical aspects of the study such as building an application using PHP, mySQL, Facebook API, etc. The study is now ongoing and my status of that of research assistant to the social computing group.</p>
+                    </div>
+                    <div class="line"></div>
+
+<!--        APEX      -->
+                    <h2 class="projectTitle" onclick="toggle('apex');">apex</h2>
+                    <div class="textBody projectDetails" id="apex">
+                        <p>buggy life at carnegie mellon:</p>
+                        <img src="images/buggy.jpg"></img>
+                        <p>As one of the first members of Apex, I learned a lot about Carnegie Mellon culture through the organization. Buggy is a something all to Carnegie Mellon itself. The idea is to fit a driver (my role) into a small vertical vehicle that is pushed by pushers, who are runners keeping the buggy moving along during the uphills. By joining Apex, I was able to understand the struggles of being an organization at its infancy. The experience has been invaluable to my college years and has been the avenue where I've met and connected with the most friendly, genuine, passionate people I've ever had the chance to meet. It contributed greatly to an amazing freshman experience.</p>
+                    </div>
+                    <div class="line"></div>
+
+<!--        INFANT LANGUAGE LEARNING LAB      -->
+                    <h2 class="projectTitle" onclick="toggle('infant');">infant language learning lab</h2>
+                    <div class="textBody projectDetails" id="infant">
+                        <p>research life at carnegie mellon:</p>
+                        <img src="http://www.psy.cmu.edu/~thiessen/Home_files/baby_on_floor2.jpg"></img>
+                        <p>The Infant Language Learning Lab is run by Professor Erik Thiessen. The lab conducts studies on infants as well as adults to find out how infants learn language and what affects an infant's ability to learn. A great deal of the studies involve statistical learning. As a research assistant at the lab, I learned how to run studies, interact with infants, and how to conduct myself in a lab.</p>
+                        <p>I had joined the lab as a freshman still unsure of the path I wanted to take in my professional career. Before realizing my passion was in web development, I had seriously thought about going to medical school. Thus, the lab provided a great opportunity to get real experience dealing with the most difficult patients: infants. As someone who loves children, working at the lab was incredibly enjoyable and I gained valuable insight on how research works in academia.</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="javascript/application.js"></script>
+</body>

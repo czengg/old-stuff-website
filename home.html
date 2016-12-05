@@ -1,69 +1,118 @@
 <!DOCTYPE html>
-<head>
+<html>
+  <head>
+    <title>Cindy Zeng</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-	<!-- STYLINGS -->
-    <link rel="stylesheet" href="stylesheets/application.css">
-    <link rel="stylesheet" href="stylesheets/home.css">
-	<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="home.css">
 
-	<!-- JAVASCRIPT -->
-	<script src="javascript/jquery.min.js"></script>
-	<script src="javascript/jQuery_mousewheel_plugin.js"></script>
-	<script src="javascript/jquery.mobile.min.js"></script>
-	<script src="javascript/jquery.touchSwipe.min.js"></script>
-	<script src="javascript/jquery.tap.min.js"></script>
-	
-</head>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/handlebars-v4.0.2.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="page active-page" id="main">
+      <div class="navbar">
+        <div class="nav">
+          <h3 id="headerText"></h3><img class="collapse" src="img/collapse.svg">
+        </div>
+        <div class="main-menu-options">
+        </div>
+      </div>
+      <div class="content">
+        <div class="pagesection introduction" id="czengg" data-content="czengg">
+          <h4>HELLO,</h4>
+          <h1>My name is <span class="highlight">Cindy Zeng</span>. A <span class="highlight">user experience developer</span> passionate about creating intuitive user interfaces. My design philosophy is  <span class="highlight">research-driven</span> and <span class="highlight">mobile-first</span> design. Design and development go hand-in-hand; thus, I take my designs from a sketchpad to the browser myself. I am a <span class="highlight">javascript</span> fiend and a strong believer of <span class="highlight">cross-platform development</span>. </h1>
+          <h1>I'm currently based in <span class="highlight">San Francisco</span>.</h1>
+          <div class="resume button">
+            <a class="button" href="resume.pdf" id="resume">
+              <h3>MY RESUME</h3>
+            </a>
+          </div>
+        </div>
+        <div class="selected-projects-content">
+        </div>
+        <div class="contact-content pagesection">
+        </div>
+      </div>
+    </div>
+    <div class="page" id="project">
+      <div class="navbar">
+        <div class="nav">
+          <h3 id="headerText">CZENGG</h3><img class="collapse" src="img/collapse.svg">
+        </div>
+        <div class="project-menu-options">
+        </div>
+      </div>
+    </div>
 
-<body>
-<div class="content"><!-- NAME -->
-<div class="name">
-<h1 id="first">Cindy</h1>
-<h1 id="last">Zeng</h1>
-</div>
-<!-- ICONS -->
-<div class="icons">
-<div class="social" id="facebook"></div>
-<div class="social" id="linkedin"></div>
-<div class="social" id="twitter"></div>
-<div class="social" id="email"></div>
-</div>
-<!-- BILLBOARD NAV -->
-<div class="billboard">
-<div class="design">
-<h1 class="motto nav">Design</h1>
-<h1 class="motto motto-end">&nbsp;Well.</h1>
-</div>
-<div class="code">
-<h1 class="motto nav">Code</h1>
-<h1 class="motto motto-end">&nbsp;Smart.</h1>
-</div>
-<div class="do">
-<h1 class="motto nav">Do</h1>
-<h1 class="motto motto-end">&nbsp;Good.</h1>
-</div>
-</div>
-<!-- LEARN MORE -->
-<div class="projects clickme">
-<div class="welcome">
-<h1>Click to learn more!</h1>
-</div>
-</div>
-<!-- BACK TO TOP -->
-<div class="go-top"></div>
-</div>
-<script src="javascript/home.js" type="text/javascript"></script>
-<script src="javascript/application.js" type="text/javascript"></script>
-<script type="text/javascript">// <![CDATA[
-var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-38364245-1']);
-	  _gaq.push(['_trackPageview']);
+    <template id="selected-projects">
+      {{#each this}}
+      <div class="pagesection" id="{{id}}" data-content="{{sectionHeader}}">
+        <h4>{{sectionTitle}}</h4>
+        <h1>
+          {{#each description}}
+          {{#if highlight}}
+            <span class="highlight">{{text}}</span>
+          {{else}}
+            {{text}}
+          {{/if}}
+          {{/each}}
+        </h1>
+        <div class="pagesection-content">
+          {{#each projects}}
+          <div class="project" id="{{id}}">
+            <div class="heading-container">
+              <div class="title cell">
+                <h1 class="heading">{{title}}</h1>
+                <h5>{{type}}</h5>
+              </div>
+              <div class="languages cell">
+                <h1 class="heading">{{skills}}</h1>
+                <h5>{{skillType}}</h5>
+              </div>
+              <div class="dates cell">
+                <h1 class="heading">{{dates}}</h1>
+                <h5>year</h5>
+              </div>
+              <div class="more-info cell">
+                <div class="collapse-icon"></div>
+                <h5>more</h5>
+              </div>
+            </div>
+            <div class="content-container">
+              <div class="media">{{media}}</div>
+              <div class="text">
+                <h5>{{skillType}}:</h5> <h4 class="skills highlight">{{skills}}</h4>
+                <h5>date:</h5> <h4 class="date highlight">{{dates}}</h4><br>
+                <div>{{{desc}}}</div>
+              </div>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+      {{/each}}
+    </template>
 
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-// ]]></script>
-</body>
+    <template id="contact-methods">
+      {{#each this}}
+      <a class="contact-method" href="{{url}}">
+        <div class="{{name}} icon"></div>
+        <h4>{{name}}</h4>
+      </a>
+      {{/each}}
+    </template>
+
+    <template id="menu-options">
+      {{#each this}}
+      <div class="menu" data-content="{{id}}">
+        <h3>{{title}}</h3>
+      </div>
+      {{/each}}
+    </template>
+  </body>
+</html>

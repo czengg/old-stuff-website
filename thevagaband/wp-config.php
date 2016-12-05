@@ -80,11 +80,24 @@ define('WPLANG', '');
  */
 define('WP_DEBUG', false);
 
+/*define('MULTISITE', true);
+define('SUBDOMAIN_INSTALL', false);
+define('DOMAIN_CURRENT_SITE', 'cindyzeng.com');
+define('PATH_CURRENT_SITE', '/thevagaband/');
+define('SITE_ID_CURRENT_SITE', 1);
+define('BLOG_ID_CURRENT_SITE', 1);
+*/
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
+
+/*WordPress MU Domain Mapping */
+//define('SUNRISE', 'on');
+
+/* Multisite */
+//define('WP_ALLOW_MULTISITE', true);
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
